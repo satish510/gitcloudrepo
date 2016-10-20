@@ -17,7 +17,7 @@ value="jdbc:mysql://16.181.234.223:3306/sonarqube52?useUnicode=true;characterEnc
     <property name="sonar.projectName" value="JPetStore"/>
     <property name="sonar.projectKey" value="${mysonar.organizationName}:${sonar.projectName}"/>
     <!-- project version--> 
-    <property name="sonar.projectVersion" value="1.0" />
+    <property name="sonar.projectVersion" value="1.1" />
     <!-- location source files --> 
     <property name="sonar.sources" value="src"/>
 	<property name="sonar.language" value="java"/>
