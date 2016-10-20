@@ -1,0 +1,21 @@
+<project name="JPetStore" default="all" basedir="." xmlns:sonar="antlib:org.sonar.ant">
+<target name="sonar"  xmlns:sonar="antlib:org.sonar.ant">
+	<taskdef uri="antlib:org.sonar.ant" resource="org/sonar/ant/antlib.xml">
+        <!-- Update the following line, or put the "sonar-ant-task-*.jar" file in your "$HOME/.ant/lib" folder -->
+        <classpath path="C:\sonarqube-4.1\lib\sonarqube-ant-task-2.4.1.jar" />
+    </taskdef>
+    <property name="mysonar.organizationName" value="myOrg"/>
+    <property name="sonar.projectName" value="JPetStore" />
+    <property name="sonar.projectKey" value="${mysonar.organizationName}:${sonar.projectName}" />
+    <!-- project version--> 
+    <property name="sonar.projectVersion" value="1.0" />
+    <!-- location source files --> 
+    <property name="sonar.sources" value=".\src"/> 
+	<property name="sonar.language" value="java"/>
+	<property name="sonar.sourceEncoding" value="UTF-8" />
+    <!-- location of sonar library-->  
+    <sonar:sonar xmlns:sonar="antlib:org.sonar.ant">
+    </sonar:sonar>
+
+</target>
+</project>
