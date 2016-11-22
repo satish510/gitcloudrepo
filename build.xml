@@ -8,11 +8,11 @@ value="jdbc:mysql://16.181.234.223:3306/sonarqube52?useUnicode=true;characterEnc
     <property name="sonar.jdbc.username" value="sonarqube52"/>
     <property name="sonar.jdbc.password" value="sonarqube52"/>
   
-	<taskdef uri="antlib:org.sonar.ant" resource="org/sonar/ant/antlib.xml">
+                <taskdef uri="antlib:org.sonar.ant" resource="org/sonar/ant/antlib.xml">
         <!-- Update the following line, or put the "sonar-ant-task-*.jar" file in your "$HOME/.ant/lib" folder -->
-        <classpath path="/softwares/apache-ant-1.9.7/lib/sonarqube-ant-task-2.4.1.jar"/>
+        <classpath path="/home/utsav/softwares/ant-1.9.7/apache-ant-1.9.7/lib/sonarqube-ant-task-2.4.1.jar"/>
     </taskdef>
-	<property name="sonar.host.url" value="http://16.181.237.15:9000" />
+                <property name="sonar.host.url" value="http://13.76.210.71:9000/" />
     <property name="mysonar.organizationName" value="myOrg"/>
     <property name="sonar.projectName" value="JPetStore"/>
     <property name="sonar.projectKey" value="${mysonar.organizationName}:${sonar.projectName}"/>
@@ -20,9 +20,9 @@ value="jdbc:mysql://16.181.234.223:3306/sonarqube52?useUnicode=true;characterEnc
     <property name="sonar.projectVersion" value="1.2" />
     <!-- location source files --> 
     <property name="sonar.sources" value="src"/>
-	<property name="sonar.language" value="java"/>
-	<property name="sonar.java.source" value="1.7"/>
-	<property name="sonar.sourceEncoding" value="UTF-8"/>
+                <property name="sonar.language" value="java"/>
+                <property name="sonar.java.source" value="1.7"/>
+                <property name="sonar.sourceEncoding" value="UTF-8"/>
     <!-- location of sonar library-->
     <sonar:sonar xmlns:sonar="antlib:org.sonar.ant">
     </sonar:sonar>
