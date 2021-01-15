@@ -5,6 +5,8 @@ import com.ibatis.jpetstore.domain.Account;
 import com.ibatis.jpetstore.persistence.iface.AccountDao;
 import com.ibatis.jpetstore.persistence.DaoConfig;
 
+
+//Service Account
 public class AccountService {
 
   private AccountDao accountDao;
